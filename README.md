@@ -7,7 +7,7 @@ docker run --rm -it \
 	-p 17179:17179 \
 	--add-host example.com:0.0.0.0 \
 	-e "serverAddress=example.com" \
-	moques/docker-xmage-alpine:latest
+	moques/docker-xmage-alpine:1.4.38V0
 ```
 
 XMage needs to know the domain name the server is running on. The `--add-host` option adds an entry to the containers `/etc/hosts` file for this domain. 
@@ -40,7 +40,7 @@ apt-get install git docker.io docker-compose
 version: '2'
 services:
     mage:
-        image: moques/docker-xmage-alpine:latest
+        image: moques/docker-xmage-alpine:1.4.38V0
         container_name: moques_docker-xmage-alpine
         ports:
             - "17171:17171"

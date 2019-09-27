@@ -1,7 +1,7 @@
 version: '2'
 services:
     mage:
-        image: moques/docker-xmage-alpine:1.4.38V0
+        image: moques/docker-xmage-alpine:1.4.39V0
         container_name: moques_docker-xmage-alpine
         ports:
             - "17171:17171"

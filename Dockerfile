@@ -39,7 +39,7 @@ RUN set -ex && \
 
 WORKDIR /xmage
 
-RUN curl --silent --show-error https://github.com/magefree/mage/releases/download/xmage_1.4.38V0/xmage_1.4.38V0.zip -L -o xmage.zip \
+RUN curl --silent --show-error https://github.com/magefree/mage/releases/download/xmage_1.4.39V0/xmage_1.4.39V0.zip -L -o xmage.zip \
  && unzip xmage.zip -x "mage-client*" \
  && rm xmage.zip \
  && apk del curl jq
